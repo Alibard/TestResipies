@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Recipe</string>
+    <string name="search">SEARCH</string>
+    <string name="key_word">Input key word</string>
+    <string name="rating">Rating</string>
+    <string name="R">R</string>
+    <string name="T">T</string>
+    <string name="detail">Detail</string>
+</resources>

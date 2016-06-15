@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="bom.dom.com.recipe.MainActivity">
+
+    <RelativeLayout
+android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <EditText
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/et_search"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@+id/search_btn"
+            android:layout_toStartOf="@+id/search_btn"
+            android:gravity="center_horizontal"
+            android:hint="@string/key_word" />
+
+        <TextView
+            android:id="@+id/search_btn"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@+id/t_sort"
+            android:layout_toStartOf="@+id/t_sort"
+            android:background="@drawable/round_border"
+            android:padding="10dp"
+            android:text="@string/search"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/r_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/round_border"
+            android:padding="10dp"
+            android:text="@string/R" />
+
+        <TextView
+            android:id="@+id/t_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@+id/r_sort"
+            android:layout_toStartOf="@+id/r_sort"
+            android:background="@drawable/round_border"
+            android:padding="10dp"
+            android:text="@string/T" />
+    </RelativeLayout>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
